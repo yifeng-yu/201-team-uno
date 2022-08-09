@@ -1,0 +1,165 @@
+@charset "ISO-8859-1";
+
+* {
+	box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+	outline: none;
+}
+
+html {
+	min-height: 100vh;
+}
+
+body {
+	margin: 0;
+	/*background: radial-gradient(#ffffff, #73726f);*/
+	
+}
+.page-title {
+	font-family: "Varta";
+	font-weight: 600;
+	font-size: 40px;
+	margin: 0;
+}
+
+.game-info {
+	/*color:#3b3b3b ;*/
+	font-size: 16px;
+}
+
+.game-info-players {
+	color: #3b3b3b;
+	font-weight: 300;
+	margin-left: 10px;
+}
+
+.game-info-container {
+	font-family: "Varta";
+	font-weight: 600;
+	width: 300px;
+	position: absolute;
+	padding: 20px;
+	top: 0;
+	left: 0;
+	/*grid-column: 1 / -1;
+	display: flex;
+	justify-content: space-between;*/
+}
+
+.game-container {
+	display: grid;
+	grid-template-columns: repeat(6, auto);
+	grid-gap: 10px;
+	margin: 50px;
+	justify-content: center;
+}
+
+.cardContainer {
+	
+}
+
+.card {
+	position: relative;
+	background-color: black;
+	height: 175px;
+	width: 125px;
+	border-radius: 2em;
+	transition: transorm 100ms ease-in-out;
+	cursor: pointer;
+}
+
+.card-face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	
+}
+
+.card:hover {
+	height: 180px;
+	width: 130px;
+}
+
+
+.uno {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.card-hover {
+	/* */
+}
+
+.game-container button {
+	background-color: #FF6C6C;
+	width: 80px;
+	color: white;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	text-align: center;
+	font-family: "Varta";
+	font-size: 24px;
+	font-weight: 300;
+	margin: 10px;
+	transition: all .2s ease-in-out;
+	border-radius: 10px;
+	border: 0px;
+}
+
+.game-container button:hover { 
+	transform: scale(1.1); 
+}
+
+.game-buttons {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -175px;
+}
+
+.modal-content button {
+	width: 100px;
+	color: white;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	text-align: center;
+	font-family: "Varta";
+	font-size: 24px;
+	font-weight: 300;
+	margin: 10px;
+	transition: all .2s ease-in-out;
+	border-radius: 10px;
+	border: 0px;
+}
+
+#wildRedButton {
+	background-color: #ff5555;
+}
+
+#wildYellowButton {
+	background-color: #ffaa00;
+}
+
+#wildGreenButton {
+	background-color: #55aa55;
+}
+
+#wildBlueButton {
+	background-color: #5555ff;
+}
+
+.modal-content button:hover {
+	transform: scale(1.1); 
+	cursor: pointer;
+}
